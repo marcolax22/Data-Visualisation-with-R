@@ -1,0 +1,111 @@
+---
+title: "Introduction - Data Visualisation with R"
+author: "Marco Lax"
+date: "Summer term 2023"
+output:
+  html_document: default
+  pdf_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Welcome to the Data Visualization Course with R at the University of Constance
+
+In the era of data-driven decision-making, the ability to effectively communicate complex information through visual representation is becoming a crucial skill across all disciplines. Are you ready to unlock the power of data visualization and transform social data sets into compelling, insightful visual stories?
+
+Our cutting-edge Data Visualization Course with R is tailored to equip you with the essential knowledge and practical skills needed to create stunning visualizations that transcend the boundaries of traditional data analysis. Whether you're a social scientist, researcher, business professional, or a data enthusiast, this course offers an immersive journey into the world of data visualization using the powerful R programming language.
+
+## What You'll Learn:
+
+-   Fundamentals of data visualization principles and best practices.
+-   Data wrangling and preparation for visualization.
+-   R programming essentials for data visualization.
+-   Exploratory data analysis techniques.
+-   Creating static and interactive visualizations with ggplot2 and other R packages.
+-   Storytelling with data and effective communication through visualization.
+
+## Prerequisites:
+
+Participants should have a basic understanding of data analysis concepts and some familiarity with R programming. Don't worry if you're not an expert in R; we'll cover the essential aspects to get you up and running.
+
+Don't miss this opportunity to transform your data into captivating visual stories that make a difference! Enroll in our Data Visualization Course with R today and embark on an exciting journey towards becoming a data visualization expert.
+
+### R Packages
+
+**How to Install Packages in R**
+
+In R, packages are essential tools that extend the functionality of the base R language, allowing you to access additional functions and capabilities for various tasks. Installing packages is a straightforward process using the `install.packages()` function.
+
+To install a package, open R or RStudio and follow these steps:
+
+1. **Install a Single Package:**
+
+To install a single package, use the `install.packages()` function with the name of the package enclosed in quotes:
+
+```{r}
+#install.packages("ggplot2")
+```
+
+This example installs the popular data visualization package "ggplot2."
+
+3. **Install Multiple Packages:**
+
+You can install multiple packages simultaneously by providing a vector of package names:
+
+```{r}
+#install.packages(c("tidyr","dplyr"))
+```
+
+This example installs three packages: "dplyr," "tidyr," and "ggplot2."
+
+6. **Load Installed Package:**
+
+Once the package is installed, load it into your R session using the `library()` or `require()` function:
+
+```{r}
+library(ggplot2)
+```
+
+Now you're ready to utilize the functions and capabilities of the installed package in your R code.
+
+With these simple steps, you can easily install packages in R, expanding your data analysis and visualization toolkit to suit your needs. Happy coding!
+
+
+### Basic Syntax of ggplot2
+
+To start creating visualizations with ggplot2, you need to follow a consistent syntax pattern:
+
+
+```{r}
+# Sample dataset
+data <- data.frame(x = c(1, 2, 3, 4, 5),
+                   y = c(2, 4, 1, 5, 3))
+```
+
+Now, we can create a scatter plot:
+
+```{r}
+ggplot(data = data) +
+  geom_point(mapping = aes(x = x, y = y))
+```
+
+In this example:
+
+data = data specifies the dataset we want to use.
+geom_point() indicates that we want to create a scatter plot.
+mapping = aes(x = x, y = y) defines the aesthetic mappings, associating the x variable with the x-axis and the y variable with the y-axis.
+Customizations
+
+ggplot2 offers a wide range of customizations to enhance your visualizations. You can add labels, change colors, adjust axis scales, and much more.
+
+For instance, let's customize the scatter plot by adding a title and changing the point color:
+
+```{r}
+ggplot(data = data) +
+  geom_point(mapping = aes(x = x, y = y), color = "blue") +
+  labs(title = "Customized Scatter Plot", x = "X-axis label", y = "Y-axis label")
+```
+
+Here, we added color = "blue" inside geom_point() to change the point color, and labs() to set the title and axis labels.

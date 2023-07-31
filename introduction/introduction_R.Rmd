@@ -1,0 +1,42 @@
+---
+title: "Data Visualisation - University of Constance"
+author: "Marco Lax"
+date: "Summer term 2023"
+output: ioslides_presentation
+---
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## How to download R and R Studio
+
+-   **What is R?**
+
+R is a powerful and open-source programming language specifically designed for statistical computing and data analysis. 
+
+**Step 1: Download R**
+
+1. Go to the R project website: https://www.r-project.org/
+3. Choose a CRAN mirror location (preferably one geographically close to you) from the list of mirrors provided.
+4. Select the appropriate version of R for your operating system (Windows, macOS, or Linux) and download the installer.
+
+## How to download R and R Studio
+
+**Step 2: Download RStudio**
+
+1. Go to the RStudio website: https://www.rstudio.com/
+2. Click on the "Download" link in the top menu.
+3. Under "RStudio Desktop," click on "Download RStudio Desktop."
+4. Choose the appropriate installer for your operating system (Windows, macOS, or Linux) and download it.
+
+## With which tools will we work in this course?
+
+- **R Slides:** Interactive presentations with R code and multimedia for engaging communication.
+
+- **R Markdown:** Blend text and code in one document for efficient report generation in different formats.
+
+- **R Files:** Plain text files with R code for organized script storage and execution.
+
+## Let's get started...
+
+You now have your R setup completed. Let's begin the course and explore data visualization with R using social data sets. Get ready to learn essential techniques and create impactful visualizations. Let's get started!
